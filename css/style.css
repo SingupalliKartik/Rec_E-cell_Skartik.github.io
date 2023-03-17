@@ -1,0 +1,1024 @@
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Light.eot');
+    src: local('Fira Sans Light'),
+        url('../fonts/FiraSans-Light.eot') format('embedded-opentype'),
+        url('../fonts/FiraSans-Light.woff') format('woff'),
+        url('../fonts/FiraSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Regular.eot');
+    src: local('Fira Sans Regular'),
+        url('../fonts/FiraSans-Regular.eot') format('embedded-opentype'),
+        url('../fonts/FiraSans-Regular.woff') format('woff'),
+        url('../fonts/FiraSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Bold.eot');
+    src: local('Fira Sans Bold'),
+        url('../fonts/FiraSans-Bold.eot') format('embedded-opentype'),
+        url('../fonts/FiraSans-Bold.woff') format('woff'),
+        url('../fonts/FiraSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background-image: url(/images/90158083-light-pastel-color-vector-low-poly-crystal-background-polygon-design-pattern-low-poly-illustration.jpg);
+
+    height: 100vh;
+    background-size: cover;
+}
+
+/***** Typography *****/
+body,
+p,
+a,
+th,
+td,
+li,
+dl,
+.form-control {
+    font: normal normal 300 18px/2em 'Fira Sans';
+}
+
+b,
+strong,
+dt {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 2em;
+}
+
+/***** Material Shadow *****/
+.shadow-top-down {
+    box-shadow: 0px 8px 8px -4px rgba(0, 0, 0, 0.75);
+    transition: all .5s;
+}
+
+.shadow-top-down:hover {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+/***** Material Form Elements *****/
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+form .form-group {
+    margin-top: 30px;
+}
+
+form input.form-control,
+form button.form-control,
+form textarea.form-control,
+form select.form-control {
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #233842;
+    border-radius: 0px;
+    height: 45px;
+}
+
+form input.form-control:focus,
+form button.form-control:focus,
+form textarea.form-control:focus {
+    border-bottom-color: #c0c0c0;
+    box-shadow: none;
+}
+
+form button.form-control {
+    background-color: #275267;
+    transition: .5s;
+}
+
+form button.form-control[type=reset] {
+    background-color: transparent;
+}
+
+form button.form-control:hover,
+form button.form-control:focus {
+    border-bottom-color: #275267;
+    background-color: #1c2d35;
+}
+
+form textarea.form-control {
+    min-height: 120px;
+}
+
+form .input-group-addon {
+    border: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #233842;
+    vertical-align: top;
+    border-radius: 0;
+    color: white;
+}
+
+form .input-group-addon i {
+    padding-top: 10px;
+    color: #000;
+}
+
+form .checkbox input[type=checkbox] {
+    margin-top: 12px;
+}
+
+/***** Images Padding Config *****/
+.img-rounded {
+    border-radius: 4px;
+}
+
+.img-n-pargaraph .pull-right {
+    padding: 0;
+    margin: 10px 0 15px 15px;
+}
+
+.img-n-pargaraph .pull-left {
+    padding: 0;
+    margin: 10px 15px 15px 0;
+}
+
+/***** Template Header *****/
+header.template_header h1 {
+    font: normal normal 200 50px/150px 'Fira Sans', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 800;
+    color: #fff;
+}
+
+header.template_header h1 span {
+    position: relative;
+    top: -15px;
+}
+
+/***** Main Menu *****/
+nav.main-menu {
+    top: 130px;
+    right: 100px;
+    z-index: 998;
+    display: none;
+    position: fixed;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(37, 58, 68, .15);
+}
+
+nav.main-menu a:link,
+nav.main-menu a:hover,
+nav.main-menu a:focus,
+nav.main-menu a {
+    color: #e04976;
+    text-align: left;
+    font: normal normal 400 18px/30px 'Fira Sans', sans-serif;
+    padding: 10px 50px 10px 30px;
+    border-radius: 0;
+}
+
+.show-menu {
+    position: fixed;
+    z-index: 999;
+    top: 50px;
+    right: 100px;
+    text-align: center;
+}
+
+.show-menu a:hover,
+.show-menu a {
+    font: normal normal 100 100px/70px 'Fira Sans', sans-serif;
+    border: 1px solid rgba(37, 58, 68, .15);
+    text-decoration: none;
+    border-radius: 50px;
+    background: #fff;
+    display: block;
+    color: #e04976;
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    outline: none;
+}
+
+/***** Home *****/
+#templatemo_home {
+    background: #154558 url(../images/jumbo_background.jpg) fixed;
+    /*background:  url(../images/.jpg) fixed;*/
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 130px;
+    color: #fff;
+}
+
+#templatemo_home .templatemo_home_inner_wapper {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#templatemo_home h1 {
+    margin-top: 20vh;
+    font: normal normal 400 70px/80px 'Fira Sans', sans-serif;
+}
+
+#templatemo_home h2 {
+    font: normal normal 100 36px/40px 'Fira Sans', sans-serif;
+}
+
+#templatemo_home p {
+    margin: 30px 0 30px 0;
+    font: normal normal 400 25px/80px 'Fira Sans', sans-serif;
+}
+
+#templatemo_home p a {
+    background-color: #e04976;
+    border-bottom: 1px dotted #000;
+    text-decoration: none;
+    padding: 5px;
+    color: #000000;
+}
+
+#templatemo_home p a:hover {
+    background-color: rgba(255, 255, 255, .75);
+    border-bottom: 0px dotted #000;
+}
+
+#templatemo_home a.btn_wapper {
+    margin-bottom: 150px;
+}
+
+#templatemo_home a.btn {
+    font: normal normal 300 18px/60px 'Fira Sans', sans-serif;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #fff;
+    height: 63px;
+    color: #000;
+    padding: 0;
+}
+
+#templatemo_home a.btn:hover {
+    font: normal normal 300 18px/60px 'Fira Sans', sans-serif;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e04976;
+    height: 63px;
+    color: #ffffff;
+    padding: 0;
+}
+
+/***** Features *****/
+
+span {
+    content: "\26AD";
+}
+
+#templatemo_features span {
+    size: 10px;
+
+}
+
+#templatemo_features {
+    background: #455a64 url(../images/90158083-light-pastel-color-vector-low-poly-crystal-background-polygon-design-pattern-low-poly-illustration.jpg) fixed;
+    padding-bottom: 130px;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+#templatemo_features p {
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#templatemo_features .feature-box {
+    transition: all .5s;
+    border-radius: 20px;
+    background: transparent;
+    padding: 40px 0 40px 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#templatemo_features .feature-box:hover {
+    padding: 0;
+    color: #fff;
+    border-radius: 20px;
+}
+
+#templatemo_features .feature-box .feature-box-inner {
+    box-shadow: inset 0px 0px 0 10px #cecece;
+    border-bottom: 10px solid #cecece;
+    border-top: 10px solid #cecece;
+    transition: all .5s;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+
+    max-width: 300px;
+    height: 400px;
+}
+
+#templatemo_features .feature-box:hover .feature-box-inner {
+    box-shadow: inset 0px 0px 0px 0px #cecece;
+    border-bottom: 10px solid #3d799f;
+    border-top: 10px solid #3d799f;
+    padding: 60px 20px 60px 20px;
+    background: #e04976;
+    border-radius: 20px;
+}
+
+#templatemo_features .feature-box p {
+    max-width: auto;
+    min-height: auto;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: left;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#templatemo_features .feature-box .feature-box-icon {
+    border-radius: 0px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 56px;
+    color: #233842;
+    border-radius: 20px;
+}
+
+/***** Download *****/
+#templatemo_download {
+    background: url(../images/download_background.jpg) fixed;
+}
+
+#templatemo_download h2 {
+    font: normal normal 100 100px/150px 'Fira Sans', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+#templatemo_download p {
+    text-align: center;
+    color: #fff;
+}
+
+#templatemo_download a {
+    margin: 50px auto 100px auto;
+    display: block;
+    width: 260px;
+}
+
+#templatemo_download .templatemo_download_text_wapper {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+.kar {
+    width: 100px;
+    height: 100px;
+    opacity: 50%;
+    border-radius: 20px;
+
+}
+
+.kar2 {
+    opacity: 50%;
+    border-radius: 20px;
+}
+
+/***** Element *****/
+#templatemo_element .container {
+    background-color: #fff;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-radius: 5px;
+}
+
+#templatemo_element header h1 {
+    color: #000;
+}
+
+#templatemo_element #element-icon-wapper {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#templatemo_element #element-icon-wapper>div {
+    background-color: rgba(0, 0, 0, .05);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+#templatemo_element #element-icon-wapper>div:hover {
+    transition: .5s;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#templatemo_element #element-icon-wapper a {
+    color: #000;
+}
+
+#templatemo_element #img-grid-wapper>div {
+    padding: 5px;
+}
+
+/* login */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+#templatemo_login .title {
+    margin: 0;
+}
+
+#templatemo_login .title h2 {
+    margin: 40px 0 5px;
+}
+
+.logincon {
+    background-image: url(/images/90158083-light-pastel-color-vector-low-poly-crystal-background-polygon-design-pattern-low-poly-illustration.jpg);
+}
+
+.logincon body {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+.logincon h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.logincon h2 {
+    text-align: center;
+}
+
+.logincon p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+.logincon span {
+    font-size: 12px;
+}
+
+.logincon a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.logincon button {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+}
+
+.logincon button:active {
+    transform: scale(0.95);
+}
+
+.logincon button:focus {
+    outline: none;
+}
+
+.logincon button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+.logincon form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 80%;
+    text-align: center;
+}
+
+.logincon input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+.logincon .container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.logincon .form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.logincon .sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.logincon .container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.logincon .sign-up-container {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.logincon .container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.logincon .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.logincon .container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+.logincon .overlay {
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.logincon .container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.logincon .overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.logincon .overlay-left {
+    transform: translateX(-20%);
+}
+
+.logincon .container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.logincon .overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.logincon .container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+.logincon .social-container {
+    margin: 20px 0;
+}
+
+.logincon .social-container a {
+    border: 1px solid #DDDDDD;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+}
+
+/* DATE PICKER*/
+.picker {
+    font-size: 30px;
+    background: black;
+    border: none;
+    color: #FF416C;
+}
+
+.my-checkbox {
+    align-items: self-start;
+    transform: scale(2);
+    margin-right: 11px;
+    padding: 10px;
+}
+
+/* review */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+.container {
+
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container .review {
+    margin-bottom: 30px;
+}
+
+.title {
+    margin: 40px 0px;
+}
+
+.title h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font: normal normal 200 50px/150px 'Fira Sans', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 800;
+
+}
+
+.title .underline {
+    width: 100px;
+    height: 4px;
+    background-color: #177a29;
+    margin: 0 auto;
+}
+
+.review {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-image: url(/images/pattern_bg.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: "Open Sans", sans-serif;
+    border-radius: 12px;
+}
+
+#person-img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+#author {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 10px;
+    color: #FFFB7D
+}
+
+#job {
+    text-transform: uppercase;
+    line-height: 150%;
+    margin-bottom: 10px;
+    color: #85FFBD;
+}
+
+#info {
+    height: 100px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    border-style: none;
+    font-size: 30px;
+    margin: 0 10px;
+    color: #85FFBD;
+    cursor: pointer;
+    background-color: #234ab6;
+}
+
+.credit a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+}
+
+.credit {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: #dd1791;
+    text-align: center;
+}
+
+
+/***** Contact *****/
+#templatemo_contact {
+    background: #e4dbdb url(../images/blur_img.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-weight: 500;
+}
+
+#templatemo_contact header h1 {
+    color: #000000;
+    font-weight: 500;
+}
+
+#templatemo_contact p,
+#templatemo_contact a {
+    line-height: 2.5em;
+    color: #000000;
+    font-weight: 400;
+}
+
+#templatemo_contact form .form-group {
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+#templatemo_contact form input.form-control,
+#templatemo_contact form button.form-control,
+#templatemo_contact form textarea.form-control,
+#templatemo_contact form select.form-control {
+    border-bottom: 3px solid #000000;
+    color: #000000;
+    font-weight: 400;
+}
+
+#templatemo_contact form input.form-control:focus,
+#templatemo_contact form button.form-control:focus,
+#templatemo_contact form textarea.form-control:focus {
+    border-bottom-color: #dd1791;
+    font-weight: 400;
+}
+
+#templatemo_contact form textarea.form-control {
+    min-height: 120px;
+    font-weight: 400;
+}
+
+#templatemo_contact form .input-group-addon {
+    border-bottom: 3px solid #000000;
+
+    font-weight: 800;
+}
+
+#templatemo_contact .form-control:hover {
+    background-color: #e04976;
+    color: white;
+
+
+}
+
+#templatemo_contact form .input-group-addon i {
+    color: #000000;
+
+}
+
+#templatemo_contact .social {
+    margin: 0px auto 40px auto;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+#templatemo_contact .social li {
+    margin-left: 0;
+    width: 25%;
+}
+
+#templatemo_contact .social a {
+    margin: 50px auto 4px auto;
+    background-color: #000000;
+    border-radius: 50px;
+    padding-top: 15px;
+    font-size: 40px;
+    line-height: 40px;
+    transition: .5s;
+    display: block;
+    height: 70px;
+    color: #000000;
+    width: 70px;
+}
+
+#templatemo_contact .social a:hover {
+    transform: rotate(360deg);
+    color: #ffffff;
+}
+
+#templatemo_contact .social .social-facebook {
+    background: #4a6fb5;
+}
+
+#templatemo_contact .social .social-twitter {
+    background: #28a9e0;
+}
+
+#templatemo_contact .social .social-youtube {
+    background: #f86d70;
+}
+
+#templatemo_contact .social .social-instagram {
+    background: #cab9a9;
+}
+
+
+
+/***** Footer *****/
+footer {
+    padding: 20px 0 16px 0;
+    text-align: center;
+    background: #fff;
+
+}
+
+.footer-copyright p {
+    margin: 20px auto 20px auto;
+    text-align: initial;
+    line-height: 32px;
+    color: #666;
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .show-menu {
+        right: 50px;
+    }
+
+    nav.main-menu {
+        right: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .show-menu {
+        right: 30px;
+    }
+
+    nav.main-menu {
+        right: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #templatemo_download h2 {
+        font-size: 70px;
+    }
+
+    #templatemo_home h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav.main-menu {
+        right: 10px;
+    }
+
+    .show-menu {
+        right: 10px;
+    }
+
+    #templatemo_contact .social a {
+        padding: 18px;
+        font-size: 25px;
+        line-height: 20px;
+        height: 60px;
+        width: 60px;
+    }
+}
