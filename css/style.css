@@ -43,7 +43,7 @@ html {
 }
 
 body {
-    background-image: url(/images/90158083-light-pastel-color-vector-low-poly-crystal-background-polygon-design-pattern-low-poly-illustration.jpg);
+    background-image: url(/images/BG.jpg);
 
     height: 100vh;
     background-size: cover;
@@ -307,7 +307,7 @@ span {
 }
 
 #templatemo_features {
-    background: #455a64 url(../images/90158083-light-pastel-color-vector-low-poly-crystal-background-polygon-design-pattern-low-poly-illustration.jpg) fixed;
+    background: #455a64 url(../images/BG.jpg) fixed;
     padding-bottom: 130px;
     border-radius: 20px;
     background-size: cover;
@@ -469,7 +469,7 @@ span {
 }
 
 .logincon {
-    background-image: url(/images/90158083-light-pastel-color-vector-low-poly-crystal-background-polygon-design-pattern-low-poly-illustration.jpg);
+    background-image: url(/images/BG.jpg);
 }
 
 .logincon body {
@@ -782,7 +782,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-image: url(/images/pattern_bg.png);
+    background-image: url(/images/bg2.png);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: "Open Sans", sans-serif;
     border-radius: 12px;
